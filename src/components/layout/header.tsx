@@ -20,8 +20,8 @@ export default function Header() {
       <Link
         href={href}
         className={cn(
-          "text-sm font-medium transition-colors hover:text-primary whitespace-nowrap",
-          isActive ? "text-primary-foreground" : "text-muted-foreground"
+          "text-sm font-medium transition-colors hover:text-primary",
+          isActive ? "text-foreground" : "text-muted-foreground"
         )}
         onClick={() => setIsMenuOpen(false)}
       >
@@ -31,21 +31,19 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/70 backdrop-blur-md border-b">
-        <div className="container flex h-16 items-center">
-            <div className="hidden md:flex items-center gap-6">
+    <header className="fixed top-4 left-0 right-0 z-50 px-4">
+        <div className="container flex h-16 items-center bg-background/80 backdrop-blur-md rounded-full border">
+            <div className="hidden md:flex items-center gap-6 flex-1">
                 <Link href="/" className="mr-6 flex items-center space-x-2">
                     <Logo />
                 </Link>
-                <nav className="flex items-center space-x-6 text-sm font-medium">
+                <nav className="flex items-center space-x-6 text-sm font-medium justify-center flex-1">
                     {navLinks.map((link) => (
                     <NavLink key={link.href} href={link.href}>
                         {link.label}
                     </NavLink>
                     ))}
                 </nav>
-            </div>
-            <div className="hidden md:flex flex-1 items-center justify-end">
                 <Button asChild size="sm">
                     <Link href="/contact">Book a Call</Link>
                 </Button>
@@ -53,8 +51,8 @@ export default function Header() {
 
             {/* Mobile Menu */}
             <div className="md:hidden flex items-center justify-between w-full">
-                <Link href="/" onClick={() => setIsMenuOpen(false)} className="pl-2">
-                <Logo />
+                <Link href="/" onClick={() => setIsMenuOpen(false)}>
+                    <Logo />
                 </Link>
                 <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
                 <SheetTrigger asChild>
