@@ -93,7 +93,7 @@ export const teamMembers = [
     id: 1,
     name: "Alisha Vance",
     role: "Founder & CEO",
-    bio: "With over 15 years in the tech industry, Alisha is a visionary leader passionate about leveraging technology to solve real-world problems. She founded BitSmiths to build a culture of innovation and excellence.",
+    bio: "With over 15 years in the tech industry, Alisha is a visionary leader passionate about leveraging technology to solve real-world problems. She founded NativeEdge Studio to build a culture of innovation and excellence.",
     imageId: "team-1",
   },
   {
@@ -121,7 +121,7 @@ export const teamMembers = [
 
 export const testimonials = [
   {
-    quote: "Working with BitSmiths was a game-changer for us. Their team is not only technically proficient but also deeply understands our business needs. They delivered beyond our expectations.",
+    quote: "Working with NativeEdge Studio was a game-changer for us. Their team is not only technically proficient but also deeply understands our business needs. They delivered beyond our expectations.",
     name: "Sarah Johnson",
     company: "CEO, Innovate Inc.",
   },
@@ -131,7 +131,7 @@ export const testimonials = [
     company: "Product Manager, ConnectApp",
   },
   {
-    quote: "BitSmiths's expertise in AI and machine learning helped us unlock new revenue streams. Their solution was innovative, robust, and delivered on time.",
+    quote: "NativeEdge Studio's expertise in AI and machine learning helped us unlock new revenue streams. Their solution was innovative, robust, and delivered on time.",
     name: "Emily Rodriguez",
     company: "Director of Data Science, QuantumLeap",
   },
@@ -196,7 +196,7 @@ export const blogPosts = [
     title: "Why Your Next Project Should Be in TypeScript",
     author: "Lena Petrova",
     date: "2024-06-28",
-    excerpt: "TypeScript isn't just JavaScript with types. It's a powerful tool for building robust, maintainable, and scalable applications. Let's dive into why our team at BitSmiths loves it.",
+    excerpt: "TypeScript isn't just JavaScript with types. It's a powerful tool for building robust, maintainable, and scalable applications. Let's dive into why our team at NativeEdge Studio loves it.",
     content: "Full markdown content here...",
     imageId: "blog-2",
   },

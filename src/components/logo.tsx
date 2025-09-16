@@ -11,7 +11,7 @@ const Logo = ({ className }: { className?: string }) => (
             <path d="M8 18L20 18" stroke="white" strokeOpacity="0.4" strokeWidth="3" strokeLinecap="round"/>
         </svg>
 
-        <span className="font-headline font-bold text-lg text-foreground">BitSmiths</span>
+        <span className="font-headline font-bold text-lg text-foreground">NativeEdge Studio</span>
     </div>
 );
 

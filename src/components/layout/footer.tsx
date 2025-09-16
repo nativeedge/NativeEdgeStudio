@@ -59,7 +59,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} BitSmiths, Inc. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} NativeEdge Studio, Inc. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -23,7 +23,7 @@ export default function Home() {
           Your Vision, Engineered.
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-          BitSmiths is your strategic partner in crafting exceptional software solutions that drive growth and innovation. From concept to code, we bring your ideas to life.
+          NativeEdge Studio is your strategic partner in crafting exceptional software solutions that drive growth and innovation. From concept to code, we bring your ideas to life.
         </p>
         <div className="flex justify-center gap-4">
           <Button asChild size="lg">

@@ -6,8 +6,8 @@ import Footer from '@/components/layout/footer';
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'BitSmiths - Innovative Software Solutions',
-  description: 'BitSmiths delivers cutting-edge software development services to elevate your business.',
+  title: 'NativeEdge Studio - Innovative Software Solutions',
+  description: 'NativeEdge Studio delivers cutting-edge software development services to elevate your business.',
   icons: {
     icon: '/favicon.ico',
   },
