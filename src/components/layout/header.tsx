@@ -20,7 +20,7 @@ export default function Header() {
       <Link
         href={href}
         className={cn(
-          "text-sm font-medium transition-colors hover:text-primary",
+          "text-sm font-medium transition-colors hover:text-primary whitespace-nowrap",
           isActive ? "text-primary-foreground" : "text-muted-foreground"
         )}
         onClick={() => setIsMenuOpen(false)}
