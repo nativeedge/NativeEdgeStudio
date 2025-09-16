@@ -4,9 +4,7 @@ export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/case-studies", label: "Case Studies" },
-  { href: "/team", label: "Our Team" },
-  { href: "/blog", label: "Blog" },
-  { href: "/contact", label: "Contact" },
+  { href: "/contact", label: "Contact us" },
 ];
 
 export const services = [
@@ -95,7 +93,7 @@ export const teamMembers = [
     id: 1,
     name: "Alisha Vance",
     role: "Founder & CEO",
-    bio: "With over 15 years in the tech industry, Alisha is a visionary leader passionate about leveraging technology to solve real-world problems. She founded DevCore to build a culture of innovation and excellence.",
+    bio: "With over 15 years in the tech industry, Alisha is a visionary leader passionate about leveraging technology to solve real-world problems. She founded BitSmiths to build a culture of innovation and excellence.",
     imageId: "team-1",
   },
   {
@@ -123,7 +121,7 @@ export const teamMembers = [
 
 export const testimonials = [
   {
-    quote: "Working with DevCore was a game-changer for us. Their team is not only technically proficient but also deeply understands our business needs. They delivered beyond our expectations.",
+    quote: "Working with BitSmiths was a game-changer for us. Their team is not only technically proficient but also deeply understands our business needs. They delivered beyond our expectations.",
     name: "Sarah Johnson",
     company: "CEO, Innovate Inc.",
   },
@@ -133,7 +131,7 @@ export const testimonials = [
     company: "Product Manager, ConnectApp",
   },
   {
-    quote: "DevCore's expertise in AI and machine learning helped us unlock new revenue streams. Their solution was innovative, robust, and delivered on time.",
+    quote: "BitSmiths's expertise in AI and machine learning helped us unlock new revenue streams. Their solution was innovative, robust, and delivered on time.",
     name: "Emily Rodriguez",
     company: "Director of Data Science, QuantumLeap",
   },
@@ -198,7 +196,7 @@ export const blogPosts = [
     title: "Why Your Next Project Should Be in TypeScript",
     author: "Lena Petrova",
     date: "2024-06-28",
-    excerpt: "TypeScript isn't just JavaScript with types. It's a powerful tool for building robust, maintainable, and scalable applications. Let's dive into why our team at DevCore loves it.",
+    excerpt: "TypeScript isn't just JavaScript with types. It's a powerful tool for building robust, maintainable, and scalable applications. Let's dive into why our team at BitSmiths loves it.",
     content: "Full markdown content here...",
     imageId: "blog-2",
   },

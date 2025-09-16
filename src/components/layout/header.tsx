@@ -21,7 +21,7 @@ export default function Header() {
         href={href}
         className={cn(
           "text-sm font-medium transition-colors hover:text-primary",
-          isActive ? "text-primary" : "text-muted-foreground"
+          isActive ? "text-primary-foreground" : "text-muted-foreground"
         )}
         onClick={() => setIsMenuOpen(false)}
       >
@@ -31,9 +31,8 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 items-center">
-        <div className="mr-4 hidden md:flex">
+    <header className="fixed top-4 left-1/2 z-50 -translate-x-1/2">
+      <div className="hidden md:flex items-center gap-6 bg-background/70 backdrop-blur-md rounded-full px-6 py-3 border">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <Logo />
           </Link>
@@ -44,54 +43,49 @@ export default function Header() {
               </NavLink>
             ))}
           </nav>
-        </div>
+          <Button asChild size="sm">
+              <Link href="/contact">Book a Call</Link>
+          </Button>
+      </div>
 
         {/* Mobile Menu */}
-        <div className="md:hidden">
-          <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu className="h-5 w-5" />
-                <span className="sr-only">Open Menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="left">
-              <div className="flex flex-col h-full">
-                <div className="flex items-center justify-between border-b pb-4">
-                  <Link href="/" onClick={() => setIsMenuOpen(false)}>
-                    <Logo />
-                  </Link>
-                   <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(false)}>
-                      <X className="h-5 w-5" />
-                      <span className="sr-only">Close Menu</span>
-                   </Button>
-                </div>
-                <nav className="flex-1 flex flex-col gap-6 mt-6">
-                  {navLinks.map((link) => (
-                    <NavLink key={link.href} href={link.href}>
-                      <span className="text-lg">{link.label}</span>
-                    </NavLink>
-                  ))}
-                </nav>
-                 <Button asChild className="mt-auto">
-                    <Link href="/contact" onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
-                  </Button>
-              </div>
-            </SheetContent>
-          </Sheet>
-        </div>
-        <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
-          <div className="md:hidden">
-            <Link href="/">
+      <div className="md:hidden container">
+          <div className="flex items-center justify-between bg-background/70 backdrop-blur-md rounded-full p-2 border">
+            <Link href="/" onClick={() => setIsMenuOpen(false)} className="pl-2">
               <Logo />
             </Link>
+            <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu className="h-5 w-5" />
+                  <span className="sr-only">Open Menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="left">
+                <div className="flex flex-col h-full">
+                  <div className="flex items-center justify-between border-b pb-4">
+                    <Link href="/" onClick={() => setIsMenuOpen(false)}>
+                      <Logo />
+                    </Link>
+                    <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(false)}>
+                        <X className="h-5 w-5" />
+                        <span className="sr-only">Close Menu</span>
+                    </Button>
+                  </div>
+                  <nav className="flex-1 flex flex-col gap-6 mt-6">
+                    {navLinks.map((link) => (
+                      <NavLink key={link.href} href={link.href}>
+                        <span className="text-lg">{link.label}</span>
+                      </NavLink>
+                    ))}
+                  </nav>
+                  <Button asChild className="mt-auto">
+                      <Link href="/contact" onClick={() => setIsMenuOpen(false)}>Book a Call</Link>
+                    </Button>
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
-          <div className="hidden md:flex">
-            <Button asChild>
-              <Link href="/contact">Contact Us</Link>
-            </Button>
-          </div>
-        </div>
       </div>
     </header>
   );

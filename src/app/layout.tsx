@@ -6,8 +6,8 @@ import Footer from '@/components/layout/footer';
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'DevCore - Innovative Software Solutions',
-  description: 'DevCore delivers cutting-edge software development services to elevate your business.',
+  title: 'BitSmiths - Innovative Software Solutions',
+  description: 'BitSmiths delivers cutting-edge software development services to elevate your business.',
   icons: {
     icon: '/favicon.ico',
   },
@@ -26,9 +26,11 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body className={cn("font-body antialiased min-h-screen flex flex-col")}>
-        <Header />
-        <main className="flex-1 flex flex-col">{children}</main>
-        <Footer />
+        <div className="relative flex min-h-screen flex-col">
+          <Header />
+          <main className="flex-1 flex flex-col">{children}</main>
+          <Footer />
+        </div>
         <Toaster />
       </body>
     </html>

@@ -16,14 +16,14 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-16 md:gap-24">
       {/* Hero Section */}
-      <section className="container pt-16 md:pt-24 text-center">
+      <section className="container pt-24 md:pt-32 text-center">
         <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-4">
           <span className="animated-gradient-text">Build. Launch. Scale.</span>
           <br />
           Your Vision, Engineered.
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-          DevCore is your strategic partner in crafting exceptional software solutions that drive growth and innovation. From concept to code, we bring your ideas to life.
+          BitSmiths is your strategic partner in crafting exceptional software solutions that drive growth and innovation. From concept to code, we bring your ideas to life.
         </p>
         <div className="flex justify-center gap-4">
           <Button asChild size="lg">
