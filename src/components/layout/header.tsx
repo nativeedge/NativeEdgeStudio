@@ -32,22 +32,17 @@ export default function Header() {
 
   return (
     <header className="fixed top-4 left-0 right-0 z-50 px-4">
-        <div className="container flex h-16 items-center bg-background/80 backdrop-blur-md rounded-full border">
-            <div className="hidden md:flex items-center gap-6 flex-1">
-                <Link href="/" className="mr-6 flex items-center space-x-2">
-                    <Logo />
-                </Link>
-                <nav className="flex items-center space-x-6 text-sm font-medium justify-center flex-1">
-                    {navLinks.map((link) => (
-                    <NavLink key={link.href} href={link.href}>
-                        {link.label}
-                    </NavLink>
-                    ))}
-                </nav>
-                <Button asChild size="sm">
-                    <Link href="/contact">Book a Call</Link>
-                </Button>
-            </div>
+        <div className="max-w-4xl mx-auto flex h-16 items-center bg-background/20 backdrop-blur-md rounded-full border px-6 justify-between">
+            <Link href="/" className="flex items-center space-x-2">
+                <Logo />
+            </Link>
+            <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
+                {navLinks.map((link) => (
+                <NavLink key={link.href} href={link.href}>
+                    {link.label}
+                </NavLink>
+                ))}
+            </nav>
 
             {/* Mobile Menu */}
             <div className="md:hidden flex items-center justify-between w-full">
@@ -79,9 +74,7 @@ export default function Header() {
                         </NavLink>
                         ))}
                     </nav>
-                    <Button asChild className="mt-auto">
-                        <Link href="/contact" onClick={() => setIsMenuOpen(false)}>Book a Call</Link>
-                        </Button>
+
                     </div>
                 </SheetContent>
                 </Sheet>

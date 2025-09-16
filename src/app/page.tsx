@@ -44,9 +44,9 @@ export default function Home() {
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.slice(0, 4).map((service) => (
-            <Card key={service.id} className="flex flex-col items-center text-center p-6 hover:shadow-lg transition-shadow">
+            <div key={service.id} className="flex flex-col items-center text-center p-6">
                 <div className="p-3 rounded-full bg-secondary mb-4">
-                    <service.icon className="w-8 h-8 text-primary" />
+                    <service.icon className="w-8 h-8 text-white animate-pulse hover:animate-bounce" />
                 </div>
                 <CardHeader className="p-0">
                     <CardTitle className="text-xl font-headline">{service.title}</CardTitle>
@@ -54,21 +54,11 @@ export default function Home() {
                 <CardContent className="p-0 mt-2">
                     <p className="text-muted-foreground text-sm">{service.shortDescription}</p>
                 </CardContent>
-            </Card>
+            </div>
           ))}
         </div>
       </section>
       
-      {/* Mission Statement */}
-      <section className="bg-muted py-16 md:py-24">
-          <div className="container text-center max-w-4xl mx-auto">
-              <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4">Our Mission</h2>
-              <p className="text-lg md:text-xl text-foreground/80">
-                  To empower businesses with transformative technology, building robust and scalable solutions that stand the test of time. We believe in partnership, transparency, and a relentless pursuit of excellence.
-              </p>
-          </div>
-      </section>
-
       {/* Case Studies Preview */}
       <section className="container">
         <PageHeader 
@@ -95,7 +85,7 @@ export default function Home() {
         </div>
         <div className="text-center mt-8">
             <Button asChild variant="outline">
-                <Link href="/case-studies">View All Projects <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                <Link href="/case-studies">more <ArrowRight className="ml-2 h-4 w-4 rotate-[-90deg]" /></Link>
             </Button>
         </div>
       </section>

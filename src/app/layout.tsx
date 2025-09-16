@@ -28,7 +28,9 @@ export default function RootLayout({
       <body className={cn("font-body antialiased min-h-screen flex flex-col")}>
         <div className="relative flex min-h-screen flex-col">
           <Header />
-          <main className="flex-1 pt-24">{children}</main>
+          <main className="flex-1 pt-16 flex justify-center">
+            <div className="w-full max-w-7xl px-4">{children}</div>
+          </main>
           <Footer />
         </div>
         <Toaster />
