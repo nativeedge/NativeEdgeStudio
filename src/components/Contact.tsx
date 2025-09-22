@@ -243,7 +243,7 @@ const Contact: React.FC = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <button className="bg-gradient-to-r from-purple-600 to-pink-500 text-white p-4 rounded-xl hover:scale-105 transition-transform duration-300 shadow-lg flex items-center justify-center space-x-2">
                 <MessageCircle className="w-5 h-5" />
-                <a href="https://wa.me/03711376983">WhatsApp</a>
+                <a href="https://wa.me/+923711376983">WhatsApp</a>
         
               </button>
               
